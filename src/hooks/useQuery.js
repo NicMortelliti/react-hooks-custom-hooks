@@ -9,8 +9,8 @@ function useQuery(url) {
   useEffect(() => {
     setIsLoaded(false);
     fetch(url)
-      .then((r) => r.json())
-      .then((data) => {
+      .then(r => r.json())
+      .then(data => {
         setData(data);
         setIsLoaded(true);
       });
